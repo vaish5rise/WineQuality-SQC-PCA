@@ -16,10 +16,38 @@ To implement data preprocessing, dimensionality reduction (via PCA), and SQC ana
   - k-Nearest Neighbors
   - Decision Trees
 
-## 📂 Procedure
+## 🔧 Procedure
 
-The step-by-step R script used for data preprocessing, SQC implementation, PCA transformation, and model evaluation is available in the `code/` folder:
-- `procedure.R`
+The complete R script for performing Statistical Quality Control (SQC) and Principal Component Analysis (PCA) is included in the repository:
+
+- 📄 `SQC_PCA_Procedure.R`
+
+### 🪜 Steps Followed in the Script:
+
+1. **Load the Dataset**  
+   - Read white and red wine datasets using `read.csv()`.
+   
+2. **Data Preprocessing**  
+   - Combine datasets (if needed).
+   - Handle missing values and standardize features.
+
+3. **Apply PCA**  
+   - Use `prcomp()` to perform PCA.
+   - Visualize variance explained and principal components.
+
+4. **Perform SQC Analysis**  
+   - Calculate control limits.
+   - Generate control charts (X-bar, R, S charts) using custom functions or `qcc` package.
+
+5. **Apply Machine Learning Models**  
+   - Use `randomForest`, `knn`, etc. for classification.
+   - Evaluate model performance using accuracy, confusion matrix, etc.
+
+6. **Visualize Results**  
+   - Use `ggplot2` and `factoextra` for plots.
+
+7. **Conclusion & Interpretation**  
+   - Highlight best-performing model and how PCA/SQC improved results.
 
 
 
